@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-position: center;
+            background-size: cover;
+            color: #9a7557b2; /* Adjust text color for readability */
+            padding-top: 80px;
+        }
+
+        .jumbotron {
+    background-color: #153428; 
+    padding: 60px; 
+    border-radius: 30px; 
+    color: #e4d9d9; 
+    text-align: center; 
+}
+        
+
+        
+        .btn-get-started {
+            background-color: #3ca655;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .navbar {
+    background-color: #194f5b; /* Customize navbar background color */
+}
+
+.navbar-brand, .navbar-toggler-icon {
+    color: #fbfbfbd3; /* Customize navbar text color */
+}
+
+    </style>
+    <title>Django Website</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        
+        <div class="container">
+            <a class="navbar-brand" href="#">Sania Rafiq</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron">
+        <h1 class="display-4">Django project</h1>
+        <p class="lead">This is a Django project for sale prediction. Utilizing the advertising dataset, apply a basic linear regression model to examine the relationship between "sales" and "TV, radio, and newspaper advertising." Businesses can gain important insights into the anticipated effects of their advertising strategies with the help of the predictive sales model. This gives decision-makers the ability to maximize their marketing expenditures, distribute resources wisely, and improve overall sales results.
+
+        </p>
+        <a class="btn btn-get-started btn-lg" href="{% url 'userinput' %}" role="button">Get Started</a>
+
+    </div>
+
+    <!-- Features Section -->
+    <div class="container" id="features">
+        <div class="row">
+           
+            
+            <div class="col-lg-4 feature-box">
+                <i class="bi bi-check-circle feature
